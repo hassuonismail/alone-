@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+img{
+max-width:100%;
+height:auto;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:"poppins";
+}
+body{
+    background-color:#222831;
+}
+.navigation{
+    color: #eeee;
+    text-decoration: none;
+    font-size:15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    max-width:  1200px;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+.navigation ul {
+    display:flex;  /*make it easy to design */
+    list-style-type:none; /* remove thepint for the list*/
+    gap: 2rem;
+}
+.navigation a{
+    color: #eeee;
+    text-decoration: none;
+    font-size:15px;
+}
+.navigation a:hover{
+    color: #00abd0;
+    cursor: pointer;
+}
+hr{
+    opacity:10%;
+}
+.firsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width :1200px;
+}
+.arrow{
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+    margin-left:15px;
+}
+.nameWork{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    flex-direction:column ;
+}
+.name{
+    color:#00abd0;
+    margin-left:1rem;
+    font-size:50px;
+}
+.title{
+    color:white;
+    margin-left:1rem;
+    font-size: 75px;
+}
+.hireme{
+    background-color: #00abd0;
+    width:100px;
+    border-radius:25px ;
+    padding:10px;
+    padding-left:18px;
+    padding-right:18px;
+    color:white;
+    margin-left:1rem;
+    margin-right:1rem;
+    cursor: pointer;
+}
+.download{
+    background-color: rgba(211, 211, 211, 0.05);
+    width:100px;
+    border-radius:25px ;
+    padding:10px;
+    padding-left:18px;
+    padding-right:18px;
+    color:white;
+    margin-left:1rem;
+    margin-right:1rem;
+    cursor: pointer;
+}
+.secondsec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width :1200px;
+}
+.name2{
+    color:#00abd0;
+    margin-left:1rem;
+    font-size:70px;
+}
+.title2{
+    color:white;
+    margin-left:1rem;
+    font-size: 70px;
+}
+.aboutme{
+    display: flex;
+}
+.lamp{
+    display: flex;
+}
+.aboutpar{
+    width:500px;
+    color:rgba(211, 211, 211, 0.788);
+    padding-left:1rem;
+}
+.worksection{
+    background-image: url("assets/svg/background.svg");
+}
+.worktitle{
+    display: flex;
+}
+.WorkCont{
+        display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: left;
+    margin: 5rem auto;
+    max-width :1200px;
+    text-decoration: none;
+}
+.worksection ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.worksection li{
+    border-radius: 16px;
+    background-color:rgba(57,62,70,0.5);
+    backdrop-filter: blur(4px);
+    padding:1rem 4rem;
+}
+.worksection li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+.worksection li img:hover{
+    transform: scale(1.5);
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size:2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.contitle{
+    display: flex;
+    gap:1rem;
+}
+.callme{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    gap:15rem;
+    color:rgba(211, 211, 211, 0.788);
+}
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:7rem;
+    cursor: pointer;
+}
+
+
+
+/* 📱 Tablet */
+
+@media (max-width:1024px){
+
+header{
+    padding:0 2rem;
+}
+
+.firsection{
+    padding:0 2rem;
+}
+
+.secondsec{
+    padding:0 2rem;
+}
+
+.title{
+    font-size:60px;
+}
+
+.name2,.title2{
+    font-size:60px;
+}
+
+.worksection ul{
+    flex-wrap:wrap;
+    gap:2rem;
+    justify-content:center;
+}
+
+.callme{
+    gap:5rem;
+}
+
+}
+
+
+/* 📱 Mobile */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.navigation ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+.firsection{
+    flex-direction:column;
+    text-align:center;
+    gap:2rem;
+}
+
+.secondsec{
+    flex-direction:column;
+    text-align:center;
+    gap:2rem;
+}
+
+.arrow{
+    display:none;
+}
+
+.name{
+    font-size:35px;
+}
+
+.title{
+    font-size:45px;
+}
+
+.name2,.title2{
+    font-size:45px;
+}
+
+.firstDiv{
+    display:flex;
+    justify-content:center;
+}
+
+.worksection ul{
+    flex-direction:column;
+    gap:2rem;
+}
+
+.callme{
+    flex-direction:column;
+    gap:2rem;
+    text-align:center;
+}
+
+.App{
+    gap:2rem;
+}
+
+}
